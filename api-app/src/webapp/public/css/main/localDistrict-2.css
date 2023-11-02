@@ -1,0 +1,89 @@
+body {
+    font-family: "Spoqa Han Sans Neo", 맑은고딕, "Malgun Gothic", 돋움, Dotum, sans-serif;
+    font-weight: 400;
+    color: rgb(33, 27, 65);
+}
+
+.wrap {
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    padding: 5px;
+
+}
+
+.f-center {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.f-center .inputText {
+    margin-right: 50px;
+}
+
+.f-center .inputText>form>div {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.f-center .inputText input {
+    width: 120px;
+    padding: 2px;
+}
+
+.f-center .inputText input[type='submit'] {
+    width: auto;
+    padding: 2px 5px;
+}
+
+.f-center .inputText span {
+    display: flex;
+    align-items: center;
+    min-width: 100px;
+    height: 30px;
+
+}
+
+.f-center .rsData {
+    font-size: 1.1rem;
+}
+
+.f-center .rsData span {
+    display: flex;
+    margin-bottom: 15px;
+    height: 25px;
+    align-items: center;
+    justify-content: start;
+}
+
+.f-center .rsData b {
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    width: 120px;
+    height: 28px;
+    padding: 0px 3px;
+}
+
+.f-center .delBox {
+    padding: 30px 10px;
+}
+
+.f-center .delBox button {
+    width: 130px;
+    height: 30px;
+}
+
+
+/* Number타입 Input 에서 화살표 모양을 삭제하고 싶을 때*/
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}

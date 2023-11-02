@@ -1,0 +1,259 @@
+
+
+.f-center {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.loading {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background-color: rgba(64, 64, 64, 0.2);
+    /* background: url('/imgs/main/gif/loading.gif'); */
+
+}
+.loading  img {
+    width: 200px;
+    height: 200px;
+}
+
+.searchBox {
+    padding: 0 0 10px 0;
+}
+
+.f-stack {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.land-02 .rda .content {
+    width: 50%;
+    min-height: 360px;
+}
+
+.land-02 .s-tit {
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+    color: rgb(33, 27, 65);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: bold;
+    font-size: 17px;
+    margin-bottom: 15px;
+}
+/*  .info  => 소유 및 기타정보 */
+.land-02 .info {
+    font-size: 100%;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+    font-weight: 400;
+    color: rgb(33, 27, 65);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+.land-02 .info > div {
+    font-size: 100%;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+    font-weight: 400;
+    color: rgb(33, 27, 65);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    margin-bottom: 5px;
+}
+
+.land-02 dl {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.land-02 .info > div > dl {
+    width: 50%;
+    text-align: center;
+    padding: 12px 0;
+}
+
+.land-02 dt {
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+    font-weight: 400;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 14px;
+    color: #6d7278;
+    margin-bottom: 6px;
+}
+.land-02 dd {
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 15px;
+    color: #171746;
+    font-weight: bold;
+}
+
+
+
+.land-02 div.bg{
+    font-size: 100%;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+    font-weight: 400;
+    color: rgb(33, 27, 65);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    background: #ededf0;
+    border-radius: 8px;
+}
+
+/* .info2 => 건축물 정보  */
+.land-02 .info2 {
+    font-size: 100%;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+    font-weight: 400;
+    color: rgb(33, 27, 65);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    padding-top: 10px;
+}
+
+.land-02 .info2 dd {
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 14px;
+    color: #171746;
+    font-weight: bold;
+}
+
+.land-02 .info2 dd div {
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+    font-size: 14px;
+    color: #171746;
+    font-weight: bold;
+    margin: 0;
+    box-sizing: border-box;
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    background: #f2f6ff;
+    border-radius: 8px;
+    padding: 12px 6px ;
+}
+.land-02 .info2 dd > div:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.land-02 .info2 .name {
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+    font-size: 14px;
+    color: #171746;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    width: 25%;
+}
+
+.land-02 .info2 .memo {
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+    font-size: 14px;
+    color: #171746;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    word-break: keep-all;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+/* 지역지구/가능여부/조건·제한·예외사항  */
+.g-table2 table {
+    width: 100%;
+    height: auto;
+    /* margin: 50px auto; */
+    /* border: 1px solid black; */
+}
+.g-table2 table li {list-style: none;}
+.g-table2 .hidden {display: none;}
+
+.g-table2 thead tr th {padding: 10px 0;}
+.g-table2 tbody {position: relative;}
+.g-table2 tbody tr td {padding: 10px 5px;}
+.g-table2 tbody tr td .tipText {
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 16px;
+    color: #171746;
+}
+.g-table2 .gf_poptip {
+    position: absolute;
+    z-index: 999;
+    left: 0;
+    width: auto;
+    padding: 5px;
+    font-size: 12px;
+    background: #fff;
+    border: 1px solid #1f2d3d;
+}
+.g-table2 .gf_poptip:nth-child(even) {}
+.g-table2 .gf_poptip:nth-child(odd) {}
+.g-table2 .popper_arrow {
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.g-table2 .popper_arrow {
+    border-width: 6px;
+    top: -7px;
+    border-top-width: 0;
+    border-bottom-color: #1f2d3d;
+}
+.g-table2 .popper_arrow:after {
+    content: " ";
+    border-width: 5px;
+    top: 1px;
+    margin-left: -5px;
+    border-top-width: 0;
+    border-bottom-color: #1f2d3d;
+}

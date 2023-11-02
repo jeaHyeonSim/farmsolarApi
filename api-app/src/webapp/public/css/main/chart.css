@@ -1,0 +1,50 @@
+
+
+#Line_graph > .contentBoxTit{
+    width: 100%;
+    padding: 5px 25px;
+}
+#Line_graph > .contentBoxTit {
+    width: 98%;
+    height: 27px;
+    list-style-type : square ;
+    font-size: 1em;
+}
+#Line_graph > .contentBoxTit li{
+    display: flex;
+    align-items: center;
+}
+#Line_graph > .contentBoxTit li span{
+    font-size: 0.8em;
+}
+#Line_graph > .contentBoxTit span {
+    height: 20px;
+    display: block;
+    line-height: 20px;
+}
+
+#line_timegraph{
+    margin: 0 auto 0;
+}
+#Line_graph span:first-child{
+    width: 4%;
+}
+#Line_graph span:nth-child(2){
+    width: 15%;
+}
+#Line_graph span:nth-child(3){
+    width: 4%;
+}
+#Line_graph span:nth-child(4){
+    width: 15%;
+}
+
+
+
+#selectTime {
+    width: 30%;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #171b1c;
+}
+

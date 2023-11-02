@@ -1,0 +1,43 @@
+@font-face {
+    font-family:'Gmarket Sans';
+    src: url('../../fonts/GmarketSansTTFLight.eot');
+    src: url('../../fonts/GmarketSansTTFLight.eot?#iefix') format('embedded-opentype'),
+        url('../../fonts/GmarketSansTTFLight.woff2') format('woff2'),
+        url('../../fonts/GmarketSansTTFLight.woff') format('woff'),
+        url('../../fonts/GmarketSansTTFLight.svg#GmarketSansTTFLight') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family:'Gmarket Sans';
+    src: url('../../fonts/GmarketSansTTFMedium.eot');
+    src: url('../../fonts/GmarketSansTTFMedium.eot?#iefix') format('embedded-opentype'),
+        url('../../fonts/GmarketSansTTFMedium.woff2') format('woff2'),
+        url('../../fonts/GmarketSansTTFMedium.woff') format('woff'),
+        url('../../fonts/GmarketSansTTFMedium.svg#GmarketSansTTFMedium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family:'Gmarket Sans';
+    src: url('../../fonts/GmarketSansTTFBold.eot');
+    src: url('../../fonts/GmarketSansTTFBold.eot?#iefix') format('embedded-opentype'),
+        url('../../fonts/GmarketSansTTFBold.woff2') format('woff2'),
+        url('../../fonts/GmarketSansTTFBold.woff') format('woff'),
+        url('../../fonts/GmarketSansTTFBold.svg#GmarketSansTTFBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+  font-family: 'weathericons';
+  src: url('../../fonts/weathericons-regular-webfont.eot');
+  src: url('../../fonts/weathericons-regular-webfont.eot?#iefix') format('embedded-opentype'), url('../../fonts/weathericons-regular-webfont.woff2') format('woff2'), url('../../fonts/weathericons-regular-webfont.woff') format('woff'), url('../../fonts/weathericons-regular-webfont.ttf') format('truetype'), url('../../fonts/weathericons-regular-webfont.svg#weather_iconsregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

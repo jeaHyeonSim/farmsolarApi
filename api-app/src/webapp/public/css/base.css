@@ -1,0 +1,126 @@
+@charset "utf-8";
+
+/* webfont */
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 100;
+    src: url(../fonts/NotoSansKR-Thin.woff2) format('woff2'),
+    url(../fonts/NotoSansKR-Thin.woff) format('woff'),
+    url(../fonts/NotoSansKR-Thin.otf) format('opentype');
+}
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 300;
+    src: url(../fonts/NotoSansKR-Light.woff2) format('woff2'),
+    url(../fonts/NotoSansKR-Light.woff) format('woff'),
+    url(../fonts/NotoSansKR-Light.otf) format('opentype');
+}
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/NotoSansKR-Regular.woff2) format('woff2'),
+    url(../fonts/NotoSansKR-Regular.woff) format('woff'),
+    url(../fonts/NotoSansKR-Regular.otf) format('opentype');
+}
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 500;
+    src: url(../fonts/NotoSansKR-Medium.woff2) format('woff2'),
+    url(../fonts/NotoSansKR-Medium.woff) format('woff'),
+    url(../fonts/NotoSansKR-Medium.otf) format('opentype');
+}
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 700;
+    src: url(../fonts/NotoSansKR-Bold.woff2) format('woff2'),
+    url(../fonts/NotoSansKR-Bold.woff) format('woff'),
+    url(../fonts/NotoSansKR-Bold.otf) format('opentype');
+}
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 900;
+    src: url(../fonts/NotoSansKR-Black.woff2) format('woff2'),
+    url(../fonts/NotoSansKR-Black.woff) format('woff'),
+    url(../fonts/NotoSansKR-Black.otf) format('opentype');
+}
+
+/* CSS Document */
+html,body,div,span,object,h1,h2,h3,h4,h5,h6,p,a,abbr,address,cite,em,img,strong,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,section,summary,audio,video{margin:0;padding:0;border:0;line-height:1.6;}
+html, body {height:fit-content;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,label{margin:0px;padding:0px;}
+body,input,div,dt,dd,li,th,td,textarea,p,select,option {font-family:'Noto Sans KR', 'Gyeonggi Batang', 'Gyeonggi Title', 'Malgun Gothic', '맑은 고딕', 'Dotum', 'AppleGothic', 'sans-serif';color:#333;}
+
+
+address, caption, cite, code, dfn, em, th, var {font-style:normal;font-weight:normal;}
+dl, dt, dd, ul, ol, li {list-style-type:none;list-style-image:none;}
+fieldset,legend {border:0px;}
+input, select, textarea, label {vertical-align:middle;font-size:15px;}
+img {border-bottom:medium none;border-left:medium none;border-top:medium none;border-right:medium none;vertical-align:top;}
+caption {position:absolute;margin:0px;width:0px;height:0px;font-size:0px;overflow:hidden;padding:0px;}
+br {letter-spacing:0px;}
+fieldset {border:0;}
+hr {display:none;}
+button {border:0;cursor:pointer;overflow:visible;background:none;}
+table {border-collapse:collapse;border-spacing:0;}
+
+/* link */
+a {text-decoration:none;outline:none;color:#333}
+a:hover, a:active {text-decoration:none;}
+
+/* 기타태그*/
+big, s, small, strike, tt, b, u, i, center, header, nav, article, footer, address , aside ,menu ,section{display:block;}
+comment {display:none;}
+legend {position:absolute; width:0; height:0; font-size:0; line-height:0; text-indent:-9999px; overflow:hidden;}
+fieldset {border:none;}
+
+.blind, .hidden, .hidd {position:absolute; width:0; height:0; font-size:0; line-height:0; text-indent:-9999px; overflow:hidden;}
+.bg_none {background:none !important;}
+.border_none {border:none !important;}
+.border_top_none {border-top:none !important;}
+
+input::-ms-input-placeholder {color:#ddd;}
+input::-webkit-input-placeholder {color:#ddd;}
+input::-moz-placeholder {color:#ddd;}
+textarea::-webkit-input-placeholder {color:#ddd;}
+
+select {width:140px;height:40px;backround-size:10px;transition:all .3s;font-size:15px;border-radius:5px;border:1px solid #25c7b2!important;-moz-appearance:none;/* Firefox */-webkit-appearance:none;/* Safari and Chrome */appearance:none;background:url(/imgs/common/arr_down.png) no-repeat 115px !important;}
+select::-ms-expand {display:none;}
+select:hover, select:focus {border:1px solid #32798f;}
+input[type=text], input[type=password] {background:#ffffff;width:410px;height:40px;padding:2px 0;color:#454545;text-indent:7px;transition:all .3s;font-size:15px;border:1px solid #25c7b2;border-radius:5px;}
+input[type=submit] {cursor:pointer;background:#34b2b3;color:#fff;border:0;padding:12px 25px;font-weight:bold;transition:all .3s;width:110px;font-size:15px;border-radius:5px;}
+input[type=submit]:hover {background:#505c68;}
+
+/* font_color */
+.fc01 {color:#e72c2d !important;} /* red */
+.fc03 {color:#00edaf !important;} /* blue */
+.fc04 {color:#fff !important;} /* white */
+
+/* font_align */
+.alignL {text-align:left !important;} /* alignL */
+.alignC {text-align:center !important;} /* alignC */
+.alignR {text-align:right !important;} /* alignR */
+
+/* float */
+.flL {float:left;}
+.flR {float:right;}
+
+/* btnType */
+.btnType {display:inline-block;/*min-width:80px;*/padding:12px 15px;font-size:15px;transition:all .3s;border:1px solid #ccc;border-radius:3px;}
+.btnType.green {background:#7f832f;color:#fff;border:1px solid #7f832f;} /* green */
+.btnType.green:hover, .btnType.green:focus {background:#8dae00;border:1px solid #8dae00;}
+.btnType.greenD {background:#819c0c;color:#fff;border:1px solid #819c0c;} /* greenDark */
+.btnType.greenD:hover, .btnType.greenD:focus {background:#637808;border:1px solid #637808;}
+.btnType.blue {background:#1ecab8;color:#fff;border-radius:0;border:1px solid #1ecab8;} /* blueLight */
+.btnType.blue:hover, .btnType.blue:focus {background:#505c68;border:1px solid #505c68;}
+.btnType.blueR {background:#1ecab8;color:#fff;border-radius:5px;border:1px solid #1ecab8;} /* blue_round */
+.btnType.blueR:hover, .btnType.blueR:focus {background:#505c68;border:1px solid #505c68;}
+.btnType.white {background:#fff;color:#333;border:1px solid #1ecab8;} /* white */
+.btnType.white:hover, .btnType.white:focus {border-color:#505c68;}
+.btnType.brown {background:#c2b59c;color:#fff;border:1px solid #c2b59c;} /* brown */
+.btnType.brown:hover, .btnType.brown:focus {background:#c69937;border:1px solid #c69937;}

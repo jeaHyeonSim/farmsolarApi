@@ -1,0 +1,73 @@
+#modalNoticeLayer {
+	display: block;
+	position: absolute; 
+	z-index: 9;
+	text-align: left;
+	border-radius: 0px 0px 7px 7px; 
+}
+
+#modalNoticeLayer #modalNoticeLayerheader {
+	padding-left: 10px;
+    position:relative;
+    z-index: 12;
+    background-color: #F68121;
+    color: #fff;
+    font-weight:bold;
+	height: 43px;
+}
+
+#modalNoticeLayer .modalNoticeContent{
+	width:360px; 
+	height:370px;
+	border:1px solid #ccc; 
+	position:relative; 
+	left:0; 
+	top:19%; 
+	z-index:11;
+	line-height : 1.1;
+	background:#C7D1E1;
+	border-radius: 0px 0px 7px 7px; 
+}
+
+.notice {
+	font-size: 15px;
+	margin-top:5px;
+	margin-left:5px;
+	padding: 10px;
+	border: 1px solid #aaa;
+	width: 327px;
+	height: 337px;
+	background:#EFF7FD;
+	overflow: scroll;
+}
+
+.nomalNotice {
+	color: #000000;
+	font-weight: bold;
+}
+
+.infoNotice {
+	color: #0D6EFD;
+	font-weight: bold;
+}
+
+.warningNotice {
+	color: #FFC107;
+	font-weight: bold;
+}
+
+.dangerNotice {
+	color: #DC3545;
+	font-weight: bold;
+}
+
+#newNoteiceItem {
+	margin-left: 100px;
+	color: #F1C12f;
+	cursor: pointer;
+}
+
+#newNoticeCnt {
+	color: #F68121;
+	cursor: pointer;
+}

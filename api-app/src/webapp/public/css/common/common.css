@@ -1,0 +1,55 @@
+@charset "utf-8";
+body {background:#161a19;}
+
+.container {min-width:1650px; padding:0 3%;}
+#header {display:flex; align-items: center; background:#1d2733; color:#fff; padding-top:0.5vh; padding-bottom:0.5vh;}
+#header .logoBox {display:flex; align-items: center; width:24%; font-family:'Gmarket Sans',sans-serif; font-weight:500; font-size:14px; word-break:keep-all; padding-top:18px;}
+#header .logoBox .logo {position:relative; top:-10px; display:inline-block; font-size:0; width:187px; height:33px; background:url('/imgs/common/logo.png') center no-repeat; background-size:contain; margin-right:3%;}
+#header nav.menuBox {width:51%; padding:0;}
+#header nav.menuBox ul {display:flex; align-items: center; justify-content: space-evenly; margin-top:5px;}
+#header nav.menuBox ul li {color:#fff; font-weight:500; font-size:18px; letter-spacing:-0.05em;}
+#header nav.menuBox ul li.active {position:relative; color:#f1c12f;}
+#header nav.menuBox ul li.active a:before {position:absolute; display:block; width:5px; height:5px; background:#f1c12f; top:-5px; left:calc(50% - 2px); border-radius:50%; content:'';}
+#header nav.menuBox ul li a {}
+#header div.selectBox {
+	width: 13%;
+	margin-right: 1%;
+}
+#header div.selectBox #powerPlantTitle {
+	text-align: center;
+	font-weight: bold;
+}
+#header div.selectBox #powerPlantTitle span {
+	font-weight: 300;
+}
+#header div.selectBox select {
+	width: 100%;
+	height: 30px;
+	font-size: 16px;
+	background: #1d2733;
+	color: #fff;
+	border-radius: 5px;
+	/* border: 1px solid #1d2733; */
+	border: 1px solid #8e9399;
+}
+#header div.selectBox select option {
+	font-size: 14px;
+}
+
+#header .clockBox {position:relative; width:10%; font-family:'Gmarket Sans',sans-serif; font-weight:300; background:rgba(256,256,256,0.1); padding:1.5vh 0 0.5vh; margin-top:-1vh; margin-bottom:-0.5vh; margin-right:1%; font-size:13px; letter-spacing:0.07em; text-align:center;}
+#header .clockBox strong {display:block; font-family:'Gmarket Sans',sans-serif; font-weight:600; font-size:20px; color:#e9bb30; text-shadow:rgba(47,7,7,0.1) 5px 0 5px; letter-spacing:0.05em;}
+#header .mypageBox {width:14%;}
+#header .mypageBox li {display:inline-block; font-size:13px; font-weight:200; margin-right:5%;}
+#header .mypageBox li:last-child {margin-right:0;}
+#header .mypageBox .welcome b {color:#e9bb30;}
+
+#header .mypageBox .login:before {position:relative; display:inline-block; top:5px; width:20px; height:20px; background:url('/imgs/common/loginIcon.png') center no-repeat; margin-right:5px; content:'';}
+#header .mypageBox .logout:before {position:relative; display:inline-block; top:5px; width:20px; height:20px; background:url('/imgs/common/logoutIcon.png') center no-repeat; margin-right:5px; content:'';}
+
+#footer {font-size:14px; font-weight:300; letter-spacing:-0.025em; color:#fff; margin:10px 0 0 0;}
+
+#adminLink {
+	margin-left: 95px;
+	color: #F1C12f;
+	cursor: pointer;
+}

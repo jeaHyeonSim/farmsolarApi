@@ -1,0 +1,350 @@
+@charset "utf-8";
+
+#mainContent {display:flex; flex-wrap:wrap; align-items:flex-start; justify-content:space-between; color:#fff;}
+
+#mainContent .section {background:#1d2733; border-radius:10px; overflow:hidden; margin-top:1%;}
+#mainContent .section h2.contentTit {font-family:'Gmarket Sans',sans-serif; color:#fff; font-size:16px; padding:15px 25px 10px; border-bottom:1px solid #8e9399; font-weight:600;}
+#mainContent .section .contentBox {display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; }
+
+#mainContent .section.sec01,
+#mainContent .section.sec02,
+#mainContent .section.sec03 {min-height:420px;}
+#mainContent .section.sec01 .contentBox,
+#mainContent .section.sec02 .contentBox,
+#mainContent .section.sec03 .contentBox {height:360px;}
+
+#mainContent .section.sec04,
+#mainContent .section.sec05,
+#mainContent .section.sec06,
+#mainContent .section.sec07 {min-height:373px;}
+#mainContent .section.sec04 .contentBox,
+#mainContent .section.sec05 .contentBox,
+#mainContent .section.sec06 .contentBox,
+#mainContent .section.sec07 .contentBox {height:317px}
+
+#mainContent .section.sec01 {width:32%;}
+
+/* 현재 태양광 출력 */
+#mainContent .section.sec02 {width:41%;}
+#mainContent .section.sec02 .contentBox {position:relative; display:block; overflow:hidden;}
+#mainContent .section.sec02 .contentBox .sunlightBox {position:relative;}
+#mainContent .section.sec02 .contentBox .sunlightBox .sunlight {float:left; position:relative; display:inline-block; width:33.333%; text-align:center; margin:10px 0 0;}
+#mainContent .section.sec02 .contentBox .sunlightBox .sunlight:nth-child(n+4):nth-child(-n+5) {float:right; width:40%;}
+#mainContent .section.sec02 .contentBox .sunlightBox .sunlight.sunlight01 {}
+#mainContent .section.sec02 .contentBox .sunlightBox .sunlight.sunlight02 {}
+#mainContent .section.sec02 .contentBox .sunlightBox .sunlight.sunlight03 {}
+#mainContent .section.sec02 .contentBox .sunlightBox .sunlight.sunlight04 {right:12.5%;}
+#mainContent .section.sec02 .contentBox .sunlightBox .sunlight.sunlight05 {left:-3%;}
+#mainContent .section.sec02 .contentBox .sunlightBox .sunlight .icon {}
+#mainContent .section.sec02 .contentBox .sunlightBox .sunlight.sunlight02 .icon {margin-top:23px;}
+#mainContent .section.sec02 .contentBox .sunlightBox .sunlight.sunlight03 .icon {margin-top:11px;}
+#mainContent .section.sec02 .contentBox .sunlightBox .sunlight h3 {font-size:14px; margin-top:5px;}
+
+#mainContent .section.sec02 .contentBox .valueBox {position:absolute; width:74%; top:10px; left:24%;}
+#mainContent .section.sec02 .contentBox .valueBox .value {position:relative; float:left; font-weight:300; font-size:20px; letter-spacing:-0.05em; text-align:center; margin:60px 0;}
+#mainContent .section.sec02 .contentBox .valueBox .value:before {}
+#mainContent .section.sec02 .contentBox .valueBox .value:nth-child(n+4):nth-child(-n+5) {float:right;}
+#mainContent .section.sec02 .contentBox .valueBox .value .arrow {position:absolute; display:block;  top:35px; background:#26c057;}
+#mainContent .section.sec02 .contentBox .valueBox .value .arrow:before {position:absolute; display:inline-block; }
+#mainContent .section.sec02 .contentBox .valueBox .value .arrow:after {position:absolute; display:inline-block;}
+#mainContent .section.sec02 .contentBox .valueBox .value .arrow.right:before {top:-4px; left:10%; content:url('/imgs/main/valueArrowRight.gif');}
+#mainContent .section.sec02 .contentBox .valueBox .value .arrow.right:after {top:-4px; right:10%; content:url('/imgs/main/valueArrowRight.gif');}
+#mainContent .section.sec02 .contentBox .valueBox .value .arrow.left:before {top:-4px; left:10%; content:url('/imgs/main/valueArrowLeft.gif');}
+#mainContent .section.sec02 .contentBox .valueBox .value .arrow.left:after {top:-4px; right:10%; content:url('/imgs/main/valueArrowLeft.gif');}
+#mainContent .section.sec02 .contentBox .valueBox .value .arrow.top:before {top:15%; right:-4px; content:url('/imgs/main/valueArrowTop.gif');}
+#mainContent .section.sec02 .contentBox .valueBox .value .arrow.top:after {bottom:15%; right:-4px; content:url('/imgs/main/valueArrowTop.gif');}
+#mainContent .section.sec02 .contentBox .valueBox .value .arrow.bottom:before {top:15%; right:-4px; content:url('/imgs/main/valueArrowBottom.gif');}
+#mainContent .section.sec02 .contentBox .valueBox .value .arrow.bottom:after {bottom:15%; right:-4px; content:url('/imgs/main/valueArrowBottom.gif');}
+#mainContent .section.sec02 .contentBox .valueBox .value .arrow.diagonal:before {top:15%; right:-4px; content:url('/imgs/main/valueArrowTop.gif');}
+#mainContent .section.sec02 .contentBox .valueBox .value .arrow.diagonal:after {bottom:15%; right:-4px; content:url('/imgs/main/valueArrowTop.gif');}
+
+
+#mainContent .section.sec02 .contentBox .valueBox .value ul li {}
+#mainContent .section.sec02 .contentBox .valueBox .value ul li b {font-weight:600;}
+#mainContent .section.sec02 .contentBox .valueBox .value.value01 {width:23%; color:#26c057;}
+#mainContent .section.sec02 .contentBox .valueBox .value.value01 .arrow {width:100%; height:1px;}
+#mainContent .section.sec02 .contentBox .valueBox .value.value02 {width:23%; margin-left:24%; color:#26c057;}
+#mainContent .section.sec02 .contentBox .valueBox .value.value02 .arrow {width:48%; height:1px;}
+#mainContent .section.sec02 .contentBox .valueBox .value.value03 {width:15%; margin-left:10%; color:#f1c12f; text-align:right;}
+#mainContent .section.sec02 .contentBox .valueBox .value.value03 .arrow {display:none;}
+#mainContent .section.sec02 .contentBox .valueBox .value.value04 {width:15%; margin:65px 0; margin-right:18%; color:#f1c12f; text-align:right;}
+
+#mainContent .section.sec02 .contentBox .valueBox .value.value04 .arrow {width:1px; height:100%; top: -120px; left:-60%;}
+#mainContent .section.sec02 .contentBox .valueBox .value.value04 .arrow.diagonal{width:1px; height:100%; top: -110px; left:-5%; transform: rotate(40deg);}
+
+#mainContent .section.sec02 .contentBox .valueBox .value.value05 {width:22%; margin:60px 0; margin-right:18%; color:#f1c12f;}
+#mainContent .section.sec02 .contentBox .valueBox .value.value05 .arrow {width:100%; height:1px; top:45px;}
+
+#mainContent .section.sec02 .contentBox .valueBox .value.value05 ul li {margin:10px 0;}
+
+/* 태양광 발전량 종합 */
+#mainContent .section.sec03 {width:25%;}
+#mainContent .section.sec03 h2.contentTit {margin-bottom:0;}
+#mainContent .section.sec03 .contentBox {align-content: center; font-size:14px; text-align:center; padding:0 25px;}
+#mainContent .section.sec03 .contentBox .sec03box {width:32%; background:rgba(256,256,256,0.05); font-family:'Gmarket Sans',sans-serif !important; padding:2vh 0;}
+#mainContent .section.sec03 .contentBox .sec03box h3.sTit {display:inline-block; text-align:left; letter-spacing:-0.05em; line-height:120%; font-family:'Noto Sans KR',sans-serif;}
+#mainContent .section.sec03 .contentBox .sec03box strong {display:block;  font-size:20px; letter-spacing:-0.05em; color:#f1c12f; margin-top:6px; font-family:'Gmarket Sans',sans-serif !important;}
+#mainContent .section.sec03 .contentBox .today {}
+#mainContent .section.sec03 .contentBox .accumulate {}
+#mainContent .section.sec03 .contentBox .CO2 {}
+#mainContent .section.sec03 .contentBox .barBox {width:100%; text-align:left; margin-top:3.5vh;}
+#mainContent .section.sec03 .contentBox .barBox h3.sTit {font-size:17px; letter-spacing:-0.05em; font-weight:500; margin-bottom:5px;}
+#mainContent .section.sec03 .contentBox .barBox .barCont {position:relative; overflow:hidden; width:100%; height:30px; background:#fff; border-radius:5px;}
+#mainContent .section.sec03 .contentBox .barBox .barCont .bar {display:block; height:30px;}
+#mainContent .section.sec03 .contentBox .barBox .barCont .bar01 {background:#26c057;}
+#mainContent .section.sec03 .contentBox .barBox .barCont .bar02 {background:#f1c12f;}
+#mainContent .section.sec03 .contentBox .barBox .barCont .amount {position:absolute; top:5px; right:20px; color:#333;}
+
+/* 분전함 정보 */
+#mainContent .section.sec04 {width:32%;}
+#mainContent .section.sec04 .contentTit {}
+#mainContent .section.sec04 .contentBox {display:flex; flex-wrap:wrap; align-items:center; }
+#mainContent .section.sec04 .graphBox {display:flex; flex-wrap: wrap; align-content: space-around; width:45%; text-align:center;}
+#mainContent .section.sec04 .graphBox h3 {font-size:14px; color:#fff; margin-bottom:6px;}
+
+#mainContent .section.sec04 .graphBox .innerTemp,
+#mainContent .section.sec04 .graphBox .innerHumi {position:relative; width:100%;}
+
+#mainContent .section.sec04 .graphBox .innerTemp {margin-bottom:2vh;}
+#mainContent .section.sec04 .graphBox .graph {position:relative; display:inline-block; width:209px; height:107px; overflow: hidden; /*background:url('/imgs/main/sec04GraphBg.png') no-repeat;*/}
+
+#mainContent .section.sec04 .graphBox .graph span {display:block; width:100%; height:211px; transform:rotateZ(0deg); background-repeat:no-repeat;}
+#mainContent .section.sec04 .graphBox .graph span.per1 {transform:rotateZ(1.8deg);}
+#mainContent .section.sec04 .graphBox .graph span.per2 {transform:rotateZ(3.6deg);}
+#mainContent .section.sec04 .graphBox .graph span.per3 {transform:rotateZ(5.4deg);}
+#mainContent .section.sec04 .graphBox .graph span.per4 {transform:rotateZ(7.2deg);}
+#mainContent .section.sec04 .graphBox .graph span.per5 {transform:rotateZ(9deg);}
+#mainContent .section.sec04 .graphBox .graph span.per6 {transform:rotateZ(10.8deg);}
+#mainContent .section.sec04 .graphBox .graph span.per7 {transform:rotateZ(12.6deg);}
+#mainContent .section.sec04 .graphBox .graph span.per8 {transform:rotateZ(14.4deg);}
+#mainContent .section.sec04 .graphBox .graph span.per9 {transform:rotateZ(16.2deg);}
+#mainContent .section.sec04 .graphBox .graph span.per10 {transform:rotateZ(18deg);}
+#mainContent .section.sec04 .graphBox .graph span.per11 {transform:rotateZ(19.8deg);}
+#mainContent .section.sec04 .graphBox .graph span.per12 {transform:rotateZ(21.6deg);}
+#mainContent .section.sec04 .graphBox .graph span.per13 {transform:rotateZ(23.4deg);}
+#mainContent .section.sec04 .graphBox .graph span.per14 {transform:rotateZ(25.2deg);}
+#mainContent .section.sec04 .graphBox .graph span.per15 {transform:rotateZ(27deg);}
+#mainContent .section.sec04 .graphBox .graph span.per16 {transform:rotateZ(28.8deg);}
+#mainContent .section.sec04 .graphBox .graph span.per17 {transform:rotateZ(30.6deg);}
+#mainContent .section.sec04 .graphBox .graph span.per18 {transform:rotateZ(32.4deg);}
+#mainContent .section.sec04 .graphBox .graph span.per19 {transform:rotateZ(34.2deg);}
+#mainContent .section.sec04 .graphBox .graph span.per20 {transform:rotateZ(36deg);}
+#mainContent .section.sec04 .graphBox .graph span.per21 {transform:rotateZ(37.8deg);}
+#mainContent .section.sec04 .graphBox .graph span.per22 {transform:rotateZ(39.6deg);}
+#mainContent .section.sec04 .graphBox .graph span.per23 {transform:rotateZ(41.4deg);}
+#mainContent .section.sec04 .graphBox .graph span.per24 {transform:rotateZ(43.2deg);}
+#mainContent .section.sec04 .graphBox .graph span.per25 {transform:rotateZ(45deg);}
+#mainContent .section.sec04 .graphBox .graph span.per26 {transform:rotateZ(46.8deg);}
+#mainContent .section.sec04 .graphBox .graph span.per27 {transform:rotateZ(48.6deg);}
+#mainContent .section.sec04 .graphBox .graph span.per28 {transform:rotateZ(50.4deg);}
+#mainContent .section.sec04 .graphBox .graph span.per29 {transform:rotateZ(52.2deg);}
+#mainContent .section.sec04 .graphBox .graph span.per30 {transform:rotateZ(54deg);}
+#mainContent .section.sec04 .graphBox .graph span.per31 {transform:rotateZ(55.8deg);}
+#mainContent .section.sec04 .graphBox .graph span.per32 {transform:rotateZ(57.6deg);}
+#mainContent .section.sec04 .graphBox .graph span.per33 {transform:rotateZ(59.4deg);}
+#mainContent .section.sec04 .graphBox .graph span.per34 {transform:rotateZ(61.2deg);}
+#mainContent .section.sec04 .graphBox .graph span.per35 {transform:rotateZ(63deg);}
+#mainContent .section.sec04 .graphBox .graph span.per36 {transform:rotateZ(64.8deg);}
+#mainContent .section.sec04 .graphBox .graph span.per37 {transform:rotateZ(66.6deg);}
+#mainContent .section.sec04 .graphBox .graph span.per38 {transform:rotateZ(68.4deg);}
+#mainContent .section.sec04 .graphBox .graph span.per39 {transform:rotateZ(70.2deg);}
+#mainContent .section.sec04 .graphBox .graph span.per40 {transform:rotateZ(72deg);}
+#mainContent .section.sec04 .graphBox .graph span.per41 {transform:rotateZ(73.8deg);}
+#mainContent .section.sec04 .graphBox .graph span.per42 {transform:rotateZ(75.6deg);}
+#mainContent .section.sec04 .graphBox .graph span.per43 {transform:rotateZ(77.4deg);}
+#mainContent .section.sec04 .graphBox .graph span.per44 {transform:rotateZ(79.2deg);}
+#mainContent .section.sec04 .graphBox .graph span.per45 {transform:rotateZ(81deg);}
+#mainContent .section.sec04 .graphBox .graph span.per46 {transform:rotateZ(82.8deg);}
+#mainContent .section.sec04 .graphBox .graph span.per47 {transform:rotateZ(84.6deg);}
+#mainContent .section.sec04 .graphBox .graph span.per48 {transform:rotateZ(86.4deg);}
+#mainContent .section.sec04 .graphBox .graph span.per49 {transform:rotateZ(88.2deg);}
+#mainContent .section.sec04 .graphBox .graph span.per50 {transform:rotateZ(90deg);}
+#mainContent .section.sec04 .graphBox .graph span.per51 {transform:rotateZ(91.8deg);}
+#mainContent .section.sec04 .graphBox .graph span.per52 {transform:rotateZ(93.6deg);}
+#mainContent .section.sec04 .graphBox .graph span.per53 {transform:rotateZ(95.4deg);}
+#mainContent .section.sec04 .graphBox .graph span.per54 {transform:rotateZ(97.2deg);}
+#mainContent .section.sec04 .graphBox .graph span.per55 {transform:rotateZ(99deg);}
+#mainContent .section.sec04 .graphBox .graph span.per56 {transform:rotateZ(100.8deg);}
+#mainContent .section.sec04 .graphBox .graph span.per57 {transform:rotateZ(102.6deg);}
+#mainContent .section.sec04 .graphBox .graph span.per58 {transform:rotateZ(104.4deg);}
+#mainContent .section.sec04 .graphBox .graph span.per59 {transform:rotateZ(106.2deg);}
+#mainContent .section.sec04 .graphBox .graph span.per60 {transform:rotateZ(108deg);}
+#mainContent .section.sec04 .graphBox .graph span.per61 {transform:rotateZ(109.8deg);}
+#mainContent .section.sec04 .graphBox .graph span.per62 {transform:rotateZ(111.6deg);}
+#mainContent .section.sec04 .graphBox .graph span.per63 {transform:rotateZ(113.4deg);}
+#mainContent .section.sec04 .graphBox .graph span.per64 {transform:rotateZ(115.2deg);}
+#mainContent .section.sec04 .graphBox .graph span.per65 {transform:rotateZ(117deg);}
+#mainContent .section.sec04 .graphBox .graph span.per66 {transform:rotateZ(118.8deg);}
+#mainContent .section.sec04 .graphBox .graph span.per67 {transform:rotateZ(120.6deg);}
+#mainContent .section.sec04 .graphBox .graph span.per68 {transform:rotateZ(122.4deg);}
+#mainContent .section.sec04 .graphBox .graph span.per69 {transform:rotateZ(124.2deg);}
+#mainContent .section.sec04 .graphBox .graph span.per70 {transform:rotateZ(126deg);}
+#mainContent .section.sec04 .graphBox .graph span.per71 {transform:rotateZ(127.8deg);}
+#mainContent .section.sec04 .graphBox .graph span.per72 {transform:rotateZ(129.6deg);}
+#mainContent .section.sec04 .graphBox .graph span.per73 {transform:rotateZ(131.4deg);}
+#mainContent .section.sec04 .graphBox .graph span.per74 {transform:rotateZ(133.2deg);}
+#mainContent .section.sec04 .graphBox .graph span.per75 {transform:rotateZ(135deg);}
+#mainContent .section.sec04 .graphBox .graph span.per76 {transform:rotateZ(136.8deg);}
+#mainContent .section.sec04 .graphBox .graph span.per77 {transform:rotateZ(138.6deg);}
+#mainContent .section.sec04 .graphBox .graph span.per78 {transform:rotateZ(140.4deg);}
+#mainContent .section.sec04 .graphBox .graph span.per79 {transform:rotateZ(142.2deg);}
+#mainContent .section.sec04 .graphBox .graph span.per80 {transform:rotateZ(144deg);}
+#mainContent .section.sec04 .graphBox .graph span.per81 {transform:rotateZ(145.8deg);}
+#mainContent .section.sec04 .graphBox .graph span.per82 {transform:rotateZ(147.6deg);}
+#mainContent .section.sec04 .graphBox .graph span.per83 {transform:rotateZ(149.4deg);}
+#mainContent .section.sec04 .graphBox .graph span.per84 {transform:rotateZ(151.2deg);}
+#mainContent .section.sec04 .graphBox .graph span.per85 {transform:rotateZ(153deg);}
+#mainContent .section.sec04 .graphBox .graph span.per86 {transform:rotateZ(154.8deg);}
+#mainContent .section.sec04 .graphBox .graph span.per87 {transform:rotateZ(156.6deg);}
+#mainContent .section.sec04 .graphBox .graph span.per88 {transform:rotateZ(158.4deg);}
+#mainContent .section.sec04 .graphBox .graph span.per89 {transform:rotateZ(160.2deg);}
+#mainContent .section.sec04 .graphBox .graph span.per90 {transform:rotateZ(162deg);}
+#mainContent .section.sec04 .graphBox .graph span.per91 {transform:rotateZ(163.8deg);}
+#mainContent .section.sec04 .graphBox .graph span.per92 {transform:rotateZ(165.6deg);}
+#mainContent .section.sec04 .graphBox .graph span.per93 {transform:rotateZ(167.4deg);}
+#mainContent .section.sec04 .graphBox .graph span.per94 {transform:rotateZ(169.2deg);}
+#mainContent .section.sec04 .graphBox .graph span.per95 {transform:rotateZ(171deg);}
+#mainContent .section.sec04 .graphBox .graph span.per96 {transform:rotateZ(172.8deg);}
+#mainContent .section.sec04 .graphBox .graph span.per97 {transform:rotateZ(174.6deg);}
+#mainContent .section.sec04 .graphBox .graph span.per98 {transform:rotateZ(176.4deg);}
+#mainContent .section.sec04 .graphBox .graph span.per99 {transform:rotateZ(178.2deg);}
+#mainContent .section.sec04 .graphBox .graph span.per100 {transform:rotateZ(180deg);}
+
+#mainContent .section.sec04 .graphBox .graph.state01 span {background-image:url('/imgs/main/sec04GraphState01.png');}
+#mainContent .section.sec04 .graphBox .graph.state02 span {background-image:url('/imgs/main/sec04GraphState02.png');}
+#mainContent .section.sec04 .graphBox .graph.state03 span {background-image:url('/imgs/main/sec04GraphState03.png');}
+
+#mainContent .section.sec04 .graphBox .state {position:absolute; width:100%; bottom:10px; text-align:center; line-height:180%;}
+#mainContent .section.sec04 .graphBox .state strong {display:block; font-weight:800; font-size:33px;}
+#mainContent .section.sec04 .graphBox .state.state01 strong {color:#26c057;}
+#mainContent .section.sec04 .graphBox .state.state02 strong {color:#f1c12f;}
+#mainContent .section.sec04 .graphBox .state.state03 strong {color:#f12f52;}
+
+#mainContent .section.sec04 ul.lightBox {width:55%;}
+#mainContent .section.sec04 ul.lightBox li {padding:16px 7%;}
+#mainContent .section.sec04 ul.lightBox li:nth-child(odd) {background:#171b1c;}
+#mainContent .section.sec04 ul.lightBox li > strong { float: right;}
+#mainContent .section.sec04 ul.lightBox li h3 {display:inline-block; width:40%; font-size:16px; font-weight:300;}
+#mainContent .section.sec04 ul.lightBox li .circle {display:inline-block; font-size:17px; font-weight:200; margin-right:5px; margin-left: 5px;}
+#mainContent .section.sec04 ul.lightBox li .circle:before {position:relative; display:inline-block; width:13px; height:13px; border-radius:50%; top:2px; margin-right:5px; content:'';}
+#mainContent .section.sec04 ul.lightBox li .circle.circle01:before {background:#26c057;}
+#mainContent .section.sec04 ul.lightBox li .circle.circle02:before {background:#f1c12f;}
+#mainContent .section.sec04 ul.lightBox li .circle.circle03:before {background:#f12f52;}
+#mainContent .section.sec04 ul.lightBox li .temp {display:inline-block; font-size:16px; font-weight:800;}
+#mainContent .section.sec04 ul.lightBox li .temp.color01 {color:#26c057;}
+#mainContent .section.sec04 ul.lightBox li .temp.color02 {color:#f1c12f;}
+#mainContent .section.sec04 ul.lightBox li .temp.color03 {color:#f12f52;}
+
+
+
+/*  차단기 트립 원인 */
+#mainContent .section.sec05 {width:18%;}
+#mainContent .section.sec05 .contentBox {padding:0 25px; display: block;}
+#mainContent .section.sec05 .contentBox .sec05box {position:relative; padding:0.5vh 0 0.5vh 0;}
+/* #mainContent .section.sec05 .contentBox .sec05box:before {position:absolute; display:inline-block; top:0; left:0; width:4px; height:100%; border-radius:2px; content:'';} */
+
+/* #mainContent .section.sec05 .contentBox .sec05box h3.sTit {font-size:16px; font-weight:400; letter-spacing:-0.05em;} */
+/* #mainContent .section.sec05 .contentBox .sec05box h3.sTit {font-size:16px; font-weight:400;} */
+#mainContent .section.sec05 .contentBox .sec05box  {width: 100%; padding-top: 1px; padding-bottom: 1px;}
+
+#mainContent .section.sec05 .contentBox .sec05box p.amount {font-size:20px; font-weight:300;}
+#mainContent .section.sec05 .contentBox .sec05box p.amount b {}
+
+#mainContent .section.sec05 .contentBox .sec05box {color:#f1c12f;}
+
+
+/* 기상정보 */
+#mainContent .section.sec06 {width:22%;}
+
+#mainContent .section.sec06 .weather {width:100%; text-align:center; margin:10px 0 4px;}
+#mainContent .section.sec06 .weather .location {font-size:14px; color:#888; margin-bottom:15px;}
+#mainContent .section.sec06 .weather .location:before {position:relative; display:inline-block; width:17px; height:17px; top:4px; margin-right:3px; background:url('/imgs/main/weatherLoIcon.png') center no-repeat; content:'';}
+#mainContent .section.sec06 .weather .now {}
+#mainContent .section.sec06 .weather .now .icon {display:block; color:#fff; margin-bottom:5px;}
+#mainContent .section.sec06 .weather .now .icon i {font-size:50px;}
+#mainContent .section.sec06 .weather .now strong {display:block; font-size:32px; color:#61bdf0;}
+
+#mainContent .section.sec06 ul.weatherInfo {width:100%;}
+#mainContent .section.sec06 ul.weatherInfo li {padding:6px 25px; font-size:16px; letter-spacing:-0.05em;}
+#mainContent .section.sec06 ul.weatherInfo li:nth-child(odd) {background:#171b1c;}
+#mainContent .section.sec06 ul.weatherInfo li:nth-child(even) {background:#1a2127;}
+#mainContent .section.sec06 ul.weatherInfo li h3 {display:inline-block; font-size:15px; font-weight:300;}
+#mainContent .section.sec06 ul.weatherInfo li .value {position:relative; float:right; display:inline-block; width:90px; text-align:right; font-weight:300;}
+#mainContent .section.sec06 ul.weatherInfo li .value:before {position:absolute; display:inline-block; left:0; height:28px; background-position:center; background-repeat:no-repeat; content:'';}
+
+#mainContent .section.sec06 ul.weatherInfo li:nth-child(1) .value:before {width:16px; background-image:url('/imgs/main/weatherInfoIcon01.png');}
+#mainContent .section.sec06 ul.weatherInfo li:nth-child(2) .value:before {width:18px; background-image:url('/imgs/main/weatherInfoIcon02.png');}
+#mainContent .section.sec06 ul.weatherInfo li:nth-child(3) .value:before {width:16px; background-image:url('/imgs/main/weatherInfoIcon03.png');}
+#mainContent .section.sec06 ul.weatherInfo li:nth-child(4) .value:before {width:25px; background-image:url('/imgs/main/weatherInfoIcon04.png');}
+
+/* 분전함 사진 정보 */
+#mainContent .section.sec07 {width:25%;}
+/* #mainContent .section.sec07 .contentBox {padding:0 25px;} */
+#mainContent .section.sec07 .contentBox {width: 100%;}
+
+
+
+/* #mainContent .section.sec07 .contentBox .sec07box:before {position:absolute; display:inline-block; top:0; left:0; width:4px; height:100%; border-radius:2px; content:'';} */
+#mainContent .section.sec07 .contentBox .sec07box h3.sTit {font-size:16px; font-weight:400;}
+#mainContent .section.sec07 .contentBox .sec07box  {width: 100%; height: 55%; padding-top: 1px; padding-bottom: 1px; display: flex;}
+
+#mainContent .section.sec07 .contentBox .sec07box .imgBox {
+    width: 50%;
+    height: 170px;
+}
+#mainContent .section.sec07 .contentBox .sec07box .imgBox.imgBox01 {
+    background: url(/imgs/main/resize/voltageDistributionBoxIn.jpg) no-repeat;
+    background-size: 100% 100%;
+    margin-right: 12.5px;
+}
+#mainContent .section.sec07 .contentBox .sec07box .imgBox.imgBox02 {
+    background: url(/imgs/main/resize/voltageDistributionBoxOut.jpg) no-repeat;
+    background-size: 100% 100%;
+    margin-left: 12.5px;
+}
+
+#mainContent .section.sec07 .contentBox .sec07box02  {width: 100%; height: 45%; padding-top: 1px; padding-bottom: 1px; } 
+#mainContent .section.sec07 .contentBox .sec07box02 ul {
+    margin-top: 10px;
+}
+#mainContent .section.sec07 .contentBox .sec07box02 ul li {
+    display: flex;
+    border-bottom: solid 1px #8E9399;
+    height: 41px;
+    padding: 0 25px;
+}
+#mainContent .section.sec07 .contentBox .sec07box02 ul li:nth-child(2){
+}
+#mainContent .section.sec07 .contentBox .sec07box02 ul li:last-child{
+    border: none;
+}
+#mainContent .section.sec07 .contentBox .sec07box02 ul li div {
+    line-height: 41px;
+    font-size: 14px;
+}
+
+#mainContent .section.sec07 .contentBox .sec07box02 ul li div:nth-child(1)::before{
+    content: '●';
+    font-size: 8px;
+    font-weight: 900;
+    color: #fff;
+}
+#mainContent .section.sec07 .contentBox .sec07box02 ul li div:nth-child(2) { 
+    margin-left: 8px;
+    width: 40%;
+
+}
+#mainContent .section.sec07 .contentBox .sec07box02 ul li div.spaces {
+    width: 30%;
+}
+#mainContent .section.sec07 .contentBox .sec07box02 ul li div:nth-child(4) {
+    width: 25%;
+    text-align: right;
+    
+}
+
+#mainContent .section.sec01 .contentBox .sec07box02 ul li:nth-child(2) div:nth-child(4),
+#mainContent .section.sec01 .contentBox .sec07box02 ul li:nth-child(3) div:nth-child(4) {
+    color: #81FF02;
+}
+

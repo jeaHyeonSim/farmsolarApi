@@ -1,0 +1,8 @@
+.nav-item-currtDateTime {position:relative; width:150px; font-family:'Gmarket Sans',sans-serif; font-weight:500; background:rgba(256,256,256,0);  margin-top:-1vh; margin-bottom:-1vh; margin-right:1%; font-size:14px; text-align:center;}
+.nav-item-currtDateTime strong {font-family:'Gmarket Sans',sans-serif; font-weight:600; font-size:20px; color:#e9bb30; text-shadow:rgba(47,7,7,0.1) 5px 0 5px; letter-spacing:0.05em;}
+.nav-item-welcome {width:180px; text-align:center;}
+.nav-item-welcome b {color:#007bff;}
+.nav-item-logout {top:5px; width:102px; height:20px; text-align:right; font-family:'Gmarket Sans',sans-serif; font-weight:600; background:url('../../images/common/logoutIcon.png') center no-repeat; background-position: 20px; margin-right:30px;}
+
+.sidebar-header-fstep{background:transparent;color:#F1C12f;font-size:0.95rem;padding:1.5rem 1.5rem .375rem}
+.sidebar-header-nstep{background:transparent;color:#61bdf0;font-size:1.1rem;padding:1.5rem 1.5rem .375rem; margin-left: 1.1em;}

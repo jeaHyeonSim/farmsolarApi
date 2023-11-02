@@ -1,0 +1,47 @@
+html, body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+button{
+    width: 50px;
+    height: 50px;
+
+}
+#fsearch{
+    width: 500px;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+input {
+    height: 44px;
+    width: calc(100% - 64px);
+    font-size: 16px;
+}
+
+.addr_list_inbox {
+    width: 500px;
+    height: auto;
+    margin-left: 50px;
+}
+.search_result_title {
+    padding-top: 10px;
+}
+.search_result_ul {
+    padding: 10px 0 10px 0;
+}
+.search_result_li {
+    padding:5px 0;
+    font-size: 14px;
+    border: 1px solid #000;
+    margin-top: 5px;
+}
+.search_result_li > span {
+    display: block;
+}
+.search_result_jibunAddr {
+    margin-bottom: 5px;
+}
+.search_result_roadAddr {
+
+}

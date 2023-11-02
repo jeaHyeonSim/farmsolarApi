@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>계산</title>
+    <%- include('../partials/header.html') %>
+
+    <link rel="stylesheet" href="/css/main/localDistrict-2.css">
+    <script src="/js/main/localDistrict-2.js" defer></script>
+</head>
+<body>
+    <%- include('../partials/menuBtn.html') %>
+    <div class="wrap">
+        <div class="f-center">
+            <div class="inputText">
+                <form action="" id="sub">
+                    <div><span>입력 : </span></div>
+                    <div><span>MY 총 금액</span>
+                        <input type="number" name="m_amount" class="m_amount" placeholder="마이너스">
+                        <input type="number" name="amount" class="amount" placeholder="평가금액">
+                    </div>
+                    <div><span>MY 개수</span><input type="number" name="mYCnt" class="mYCnt"></div>
+                    <div><span>현재 가격</span><input type="number" name="currentAmount" class="currentAmount"></div>
+                    <div><span>구매 개수</span><input type="number" name="purchasesCnt" class="purchasesCnt"></div>
+                    <div><span>계산</span><input type="submit" value="평단계산"></div>
+                </form>
+                
+            </div>
+            <div class="rsData">
+                <span>결과</span><b>-</b>
+            </div>
+            <div class="delBox">
+                <button class="del">
+                    스토리지 삭제
+                </button>
+                
+            </div>
+        </div> <!-- f-center-->
+        
+    </div> <!-- wrap-->
+
+
+</body>
+</html>

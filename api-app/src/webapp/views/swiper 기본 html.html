@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Document</title>
+		<!-- �������� CSS -->
+		<link rel="stylesheet" href="/swiper/swiper-bundle.min.css"> <!-- swiper CSS -->
+		<link rel="stylesheet" href="/css/web/main/wrap.css">
+		<link rel="stylesheet" href="/css/web/main/swiper.css" >
+		<!-- �������� JS -->
+		<script src="/swiper/swiper-bundle.min.js"></script> <!-- swiper Script -->
+		<script src="/js/main/swiper.js" defer></script>
+        		<script>
+		            // html���� ����� ���� ���� ����
+			// include ���� header => <%- include('partials/header.html')%>
+		            // �ܺο��� ������ ������ JS���� Json���� ����ϱ� ���� => let mainLanguge = JSON.parse(`<%- JSON.stringify(__('main')) %>`);
+		</script>
+	</head>
+	<body>
+
+		<div id="wrap">  <!-- wrap start-->
+
+			<!-- Slider main container -->
+			<div class="swiper mySwiper">
+				<div class="main-slide swiper-wrapper">
+					<!-- Slides -->
+					<section class="section1 swiper-slide img01">
+						<div class="section-img section1-img">
+							<!-- <img src="/imgs/web/main/main01.png" alt="" loading="eager"> -->
+						</div>
+						<div class="section-title section1-title">
+							<div class="logo"></div>
+							<h1></h1>
+							<div class="subTextBox">
+								<p class="subText"></p>
+							</div>
+						</div>
+						<div class="bottom-icon"></div>
+					</section>
+					<section class="section2 swiper-slide img02">
+						<div class="section-img section2-img">
+							<!-- <img src="/imgs/web/main/main02.png" alt=""> -->
+						</div>
+						<div class="section-title section2-title">
+							<div class="logo"></div>
+							<h1></h1>
+							<div class="subTextBox">
+								<p class="subText"></p>
+							</div>
+						</div>
+						<div class="bottom-icon"></div>
+					</section>
+				</div>
+				
+				<!-- <div class="paginationLine"></div> -->
+				<div class="swiper-pagination"></div>
+			</div> <!-- swiper end-->
+		</div> <!-- wrap end-->
+	</body>
+</html>

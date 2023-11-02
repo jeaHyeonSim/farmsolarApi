@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>조례정보 조회</title>
+
+    <%- include('../partials/header.html') %>
+    
+    <link rel="stylesheet" href="/css/main/lawData.css">
+    <script src="/js/main/lawData.js" defer></script>
+</head>
+<body>
+    <%- include('../partials/menuBtn.html') %>
+
+    <div class="wrap" id="wrap">
+        <div>
+            <button class="lawSearch">조례정보 목록 조회</button>
+            <button class="lawService">자치법규 본문 조회</button>
+            <!-- <button class="lawService2">자치법규 본문 조회2</button> -->
+        </div>
+
+        <div class="ordinance">
+            <div>조례정보</div>
+            <table class="h-table2">
+                <colgroup>
+                    <col style="width: 15%;">
+                    <col>
+                    <col style="width: 20%;">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>종류</th>
+                        <th>법규명</th>
+                        <th>재/개정일</th>
+                    </tr>
+                </thead>
+                <tbody class="ordinanceData">
+                    <!-- <tr>
+                        <td><label class="label">조례</label></td>
+                        <td><a href="https://www.law.go.kr/DRF/lawService.do?OC=osm3067&amp;target=ordin&amp;MST=1772099&amp;type=HTML&amp;mobileYn="
+                                class="title" target="_blank"><u>전라남도 도시계획 조례</u></a></td>
+                        <td>2022-12-29</td>
+                    </tr>
+                    <tr>
+                        <td><label class="label">조례</label></td>
+                        <td><a href="https://www.law.go.kr/DRF/lawService.do?OC=osm3067&amp;target=ordin&amp;MST=1858927&amp;type=HTML&amp;mobileYn="
+                                class="title" target="_blank"><u>전라남도 사무위임 조례</u></a></td>
+                        <td>2023-09-27</td>
+                    </tr>
+                    <tr>
+                        <td><label class="label">조례</label></td>
+                        <td><a href="https://www.law.go.kr/DRF/lawService.do?OC=osm3067&amp;target=ordin&amp;MST=1860717&amp;type=HTML&amp;mobileYn="
+                                class="title" target="_blank"><u>강진군 군계획 조례</u></a></td>
+                        <td>2023-10-05</td>
+                    </tr> -->
+                </tbody>
+            </table>
+        </div>
+
+        <div class="text-list"></div>
+
+
+    </div> <!-- wrap -->
+</body>
+</html>

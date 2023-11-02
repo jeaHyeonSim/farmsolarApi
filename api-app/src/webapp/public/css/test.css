@@ -1,0 +1,56 @@
+table {
+    width: 70%;
+    height: auto;
+    margin: 50px auto;
+    border: 1px solid black;
+}
+table li {list-style: none;}
+.hidden {display: none;}
+
+thead tr th {padding: 10px 0;}
+tbody {position: relative;}
+tbody tr td {padding: 10px 5px;}
+tbody tr td .tipText {
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 16px;
+    color: #171746;
+}
+
+.gf_poptip {
+    position: absolute;
+    z-index: 999;
+    left: 0;
+    width: auto;
+    padding: 5px;
+    font-size: 12px;
+    background: #fff;
+    border: 1px solid #1f2d3d;
+}
+
+.gf_poptip:nth-child(even) {}
+.gf_poptip:nth-child(odd) {}
+.popper_arrow {
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.g-table2 .popper_arrow {
+    border-width: 6px;
+    top: -7px;
+    border-top-width: 0;
+    border-bottom-color: #1f2d3d;
+}
+.popper_arrow:after {
+    content: " ";
+    border-width: 5px;
+    top: 1px;
+    margin-left: -5px;
+    border-top-width: 0;
+    border-bottom-color: #1f2d3d;
+}

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STEP 0</title>
+    <%- include('../partials/header.html') %>
+    <link rel="stylesheet" href="/css/main/step0.css">
+
+    <script>
+        
+        let pnu = `<%= pnu%>`;
+        let stdrYear = `<%= stdrYear%>`;
+    </script>
+
+    <link rel="stylesheet" href="/css/main/localDistrict.css">
+    <script src="/js/main/localDistrict.js" defer></script>
+
+    <link rel="stylesheet" href="/css/main/landType.css">
+    <script src="/js/main/landType.js" defer></script>
+
+    <link rel="stylesheet" href="/css/main/lawData.css">
+    <script src="/js/main/lawData.js" defer></script>
+
+
+    <script src="/js/main/step0.js" defer></script>
+</head>
+<body>
+    <%- include('../partials/menuBtn.html') %>
+    <div class="loading">
+        <img src="/imgs/main/gif/loading.gif" alt="">
+    </div>
+    <div class="wrap">
+
+        <div class="f-center land-01"> <!-- 토지유형 -->
+            <h3 class="tit">토지유형 
+                <small>토지정보의 대지면적과 건축물대장의 대지면적은 다를 수 있습니다.</small>
+            </h3>
+            <div class="content">
+                <div class="land">
+                    <div class="inner">
+                        <table class="h-basic">
+                            <colgroup>
+                                <col style="width: 12%;">
+                                <col style="width: 12%;">
+                                <col style="width: 12%;">
+                                <col style="width: 12%;">
+                                <col style="width: 12%;">
+                                <col style="width: 12%;">
+                                <col>
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>지목</th>
+                                    <th>면적</th>
+                                    <th>고저</th>
+                                    <th>형상</th>
+                                    <th>방위</th>
+                                    <th>도로조건</th>
+                                    <th>토지이동(변동)내역</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="trData"></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- 토지유형 -->
+        
+
+
+
+        <div class="f-center land-02"> <!-- 지역지구분석 -->
+            <!-- 강진군 행정구역 코드 4681025022 -->
+            <!-- 강진군 PNU 코드 4681025022101700001 -->
+            <h3 class="tit">지역지구분석</h3>
+            <div class="f-stack rda">
+                <!-- 소유 및 기타정보 -->
+                <div class="content">
+                    <h3 class="s-tit">소유 및 기타정보</h4>
+                    <div class="info">
+                        <div>
+                            <dl>
+                                <dt>소유구분</dt>
+                                <dd>-</dd>
+                            </dl>
+                            <dl>
+                                <dt>공유인수</dt>
+                                <dd>-</dd>
+                            </dl>
+                        </div>
+                        <div>
+                            <dl>
+                                <dt>소유권 변동원인</dt>
+                                <dd>-</dd>
+                            </dl>
+                            <dl>
+                                <dt>소유권 변동일자</dt>
+                                <dd>-</dd>
+                            </dl>
+                        </div>
+                        <div class="bg">
+                            <dl>
+                                <dt>공시지가(원)</dt>
+                                <dd><strong class="size18">-</strong></dd>
+                            </dl>
+                            <dl>
+                                <dt>공시지가 기준일자</dt>
+                                <dd>-</dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+                <!-- 건축물 정보 -->
+                <div class="content">
+                    <h4 class="s-tit">건축물 정보</h4>
+                    <div class="info2">
+                        <dl>
+                            <dd>
+                                <div>
+                                    <div class="name">건축물 개수</div>
+                                    <div class="memo">-</div>
+                                </div>
+                                <div>
+                                    <div class="name">건축면적</div>
+                                    <div class="memo">-<sup>m2</sup></div>
+                                </div>
+                                <div>
+                                    <div class="name">주 용도</div>
+                                    <div class="memo">-</div>
+                                </div>
+                                <div>
+                                    <div class="name">기타 용도</div>
+                                    <div class="memo">-</div>
+                                </div>
+                                <div>
+                                    <div class="name">허가일자</div>
+                                    <div class="memo">-</div>
+                                </div>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 지역지구/가능여부/조건·제한·예외사항 조회하기 -->
+            <div class="content g-table2">
+                <table summary="검색 지번에서 행위제한내용 분석표">
+                    <caption class="hidden">검색 지번에서 행위제한내용 분석표</caption>
+                    <colgroup>
+                        <col width="24%">
+                        <col width="30%">
+                        <col width="">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th scope="col">지역·지구</th>
+                            <th scope="col">가능여부</th>
+                            <th scope="col">조건·제한·예외사항</th>
+                        </tr>
+                    </thead>
+                    <tbody class="htmlText">
+                        
+                    </tbody>
+                </table>
+            </div>
+        </div> <!-- 지역지구분석 -->
+
+
+        <!-- <div class="f-center eum">
+            <div class="eumBox content">
+
+            </div>
+        </div> -->
+
+
+
+        <div class="f-center lawData"> <!-- 조례정보 -->
+            <div class="ordinance"> 
+                <h3 class="tit">조례정보</h3>
+                <table class="h-table2">
+                    <colgroup>
+                        <col style="width: 15%;">
+                        <col>
+                        <col style="width: 20%;">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>종류</th>
+                            <th>법규명</th>
+                            <th>재/개정일</th>
+                        </tr>
+                    </thead>
+                    <tbody class="ordinanceData">
+                        <!-- <tr>
+                            <td><label class="label">조례</label></td>
+                            <td><a href="https://www.law.go.kr/DRF/lawService.do?OC=osm3067&amp;target=ordin&amp;MST=1772099&amp;type=HTML&amp;mobileYn="
+                                    class="title" target="_blank"><u>전라남도 도시계획 조례</u></a></td>
+                            <td>2022-12-29</td>
+                        </tr>
+                        <tr>
+                            <td><label class="label">조례</label></td>
+                            <td><a href="https://www.law.go.kr/DRF/lawService.do?OC=osm3067&amp;target=ordin&amp;MST=1858927&amp;type=HTML&amp;mobileYn="
+                                    class="title" target="_blank"><u>전라남도 사무위임 조례</u></a></td>
+                            <td>2023-09-27</td>
+                        </tr>
+                        <tr>
+                            <td><label class="label">조례</label></td>
+                            <td><a href="https://www.law.go.kr/DRF/lawService.do?OC=osm3067&amp;target=ordin&amp;MST=1860717&amp;type=HTML&amp;mobileYn="
+                                    class="title" target="_blank"><u>강진군 군계획 조례</u></a></td>
+                            <td>2023-10-05</td>
+                        </tr> -->
+                    </tbody>
+                </table>
+            </div>
+    
+            <!-- 본문 -->
+            <div class="text-list"></div>
+        </div>
+        
+        
+    </div> <!-- wrap-->
+
+
+</body>
+</html>
